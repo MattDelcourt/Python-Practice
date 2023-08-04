@@ -1,14 +1,15 @@
-#A painting company has determined that for every 112 square feet of wall space, one
-#gallon of paint and eight hours of labor will be required. The company charges $25.00
-#per hour for labour. This program asks the user to enter the number of square
-#feet of wall space to be painted and the price of the paint per gallon. The program
-#then displays the following data.
-# The number of gallons of paint required
-# The cost of the paint
-# The hours of labour required to complete the job
-# The cost of the labour to complete the job
-# The total cost of the paint job.
-
+'''
+A painting company has determined that for every 112 square feet of wall space, one
+gallon of paint and eight hours of labor will be required. The company charges $25.00
+per hour for labour. This program asks the user to enter the number of square
+feet of wall space to be painted and the price of the paint per gallon. The program
+then displays the following data.
+ The number of gallons of paint required
+ The cost of the paint
+ The hours of labour required to complete the job
+ The cost of the labour to complete the job
+ The total cost of the paint job.
+'''
 #Calculate cost
 def CalculateCost(sqFeet, paint):
     gallons = 0

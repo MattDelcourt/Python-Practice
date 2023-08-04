@@ -1,14 +1,16 @@
-#The text file named MonthsExpenses.txt that contains expenses for the last month in the following categories
-# Rent (Mortgage)
-# Gas
-# Food
-# Clothing
-# Car Payment
-# Miscellaneous
-#This Program reads the data from the file and uses matplotlib to plot a 
-#colour pie chart or Bar chart showing the distribution of your expenses.
-#to run this program you need to install matplotlib using
-#pip install matplotlib
+'''
+The text file named MonthsExpenses.txt that contains expenses for the last month in the following categories
+ Rent (Mortgage)
+ Gas
+ Food
+ Clothing
+ Car Payment
+ Miscellaneous
+This Program reads the data from the file and uses matplotlib to plot a 
+colour pie chart or Bar chart showing the distribution of your expenses.
+to run this program you need to install matplotlib using
+pip install matplotlib
+'''
 
 import matplotlib.pyplot as plt
 

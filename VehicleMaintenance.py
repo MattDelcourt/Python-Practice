@@ -1,8 +1,9 @@
-#This program asks the user to enter the monthly costs for the following
-#expenses incurred from operating their automobile: loan payment, insurance, gas,
-#and maintenance. The program then displays the total monthly costs for these
-#expenses and the total annual costs for these expenses.
-
+'''
+This program asks the user to enter the monthly costs for the following
+expenses incurred from operating their automobile: loan payment, insurance, gas,
+and maintenance. The program then displays the total monthly costs for these
+expenses and the total annual costs for these expenses.
+'''
 
 #Declare function
 def CalculateTotals(ln, ins, gas, oil, ti, main):
