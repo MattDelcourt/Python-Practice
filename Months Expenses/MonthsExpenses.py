@@ -38,7 +38,7 @@ def CreatePie(expenses):
     
     plt.savefig('Expenses.png')
     
-    document.getElementById('expensesIMG').src = plt.show()
+    print('<img src="Expenses.png" alt="Expenses Pie Chart">')
     
     plt.close()
     
