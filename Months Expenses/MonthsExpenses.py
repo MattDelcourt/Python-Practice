@@ -13,6 +13,7 @@ pip install matplotlib
 '''
 
 import matplotlib.pyplot as plt
+from pyscript import PyScript
 
 def CreateList():
     from pyodide.http import open_url
