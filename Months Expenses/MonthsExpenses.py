@@ -30,7 +30,7 @@ def CreateList():
 def CreatePie(expenses):
     tags = ['Rent', 'Gas', 'Food', 'Clothing', 'Car Payment', 'Miscellaneous']
     colors = ['gold', 'yellowgreen', 'lightcoral', 'lightskyblue']
-    explode = (0.1, 0, 0, 0)  # explode 1st slice
+    
     plt.figure(figsize=(8, 6))
     plt.axis('equal')
     plt.title("Expenses")
