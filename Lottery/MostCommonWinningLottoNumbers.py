@@ -13,7 +13,7 @@ least common numbers.
 '''
 
 def CreateList():
-    file = open('Lottery/pbnumbers.txt', 'r')
+    file = open('pbnumbers.txt', 'r')
     lottery = file.read().split()
     x = 0
     while x < len(lottery):
