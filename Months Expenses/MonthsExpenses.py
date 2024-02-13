@@ -34,7 +34,7 @@ def CreatePie(expenses):
     plt.figure(figsize=(8, 6))
     plt.axis('equal')
     plt.title("Expenses")
-    plt.pie(expenses, explode=explode, labels=tags, colors=colors, autopct='%1.1f%%', shadow=True)
+    plt.pie(expenses, labels=tags, colors=colors, autopct='%1.1f%%', shadow=True)
 
     plt.savefig('Expenses.png')
 
