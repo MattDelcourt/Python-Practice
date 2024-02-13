@@ -36,7 +36,7 @@ def CreatePie(expenses):
 
     plt.close()
 
-    print('<img src="pie_chart.png" alt="Pie Chart">')
+    print('<img src="Expenses.png" alt="Expenses Pie Chart">')
     
 def main():
     CreatePie(CreateList())
