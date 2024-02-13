@@ -35,12 +35,12 @@ def CreatePie(expenses):
     plt.axis('equal')
     plt.title("Expenses")
     plt.pie(expenses, labels=tags, colors=colors, autopct='%1.1f%%', shadow=True)
-
+    
     plt.savefig('Expenses.png')
-
+    
+    document.getElementById('expensesIMG').src = plt.show()
+    
     plt.close()
-
-    print('<img src="Expenses.png" alt="Expenses Pie Chart">')
     
 def main():
     CreatePie(CreateList())
