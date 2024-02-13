@@ -13,7 +13,9 @@ least common numbers.
 '''
 
 def CreateList():
-    file = open('https://raw.githubusercontent.com/MattDelcourt/Python-Practice/master/Lottery/pbnumbers.txt', 'r')
+    from pyodide.http import open_url
+    url = 'https://raw.githubusercontent.com/MattDelcourt/Python-Practice/master/Lottery/pbnumbers.txt'
+    file = open_url(url)
     lottery = file.read().split()
     x = 0
     while x < len(lottery):
