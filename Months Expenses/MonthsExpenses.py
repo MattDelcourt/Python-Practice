@@ -15,7 +15,9 @@ pip install matplotlib
 import matplotlib.pyplot as plt
 
 def CreateList():
-    file = open("MonthsExpenses.txt", 'r')
+    from pyodide.http import open_url
+    url = 'https://raw.githubusercontent.com/MattDelcourt/Python-Practice/master/Months%20Expenses/MonthsExpenses.txt'
+    file = open_url(url)
     expenseList = []
     expenseList = file.readlines()
     x = 0
