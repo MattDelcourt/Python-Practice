@@ -28,13 +28,13 @@ def CreateList():
     return expenseList
 
 def CreatePie(expenses):
-    fig, ax = plt.subplots()
     tags = ['Rent', 'Gas', 'Food', 'Clothing', 'Car Payment', 'Miscellaneous']
-    ax.title("Expenses")
-    ax.pie(expenses, labels=tags)
-    ax.show()
+    plt.title("Expenses")
+    plt.pie(expenses, labels=tags)
 
-    fig
+    plt.savefig('Expenses.png')
+
+    plt.close()
     
 def main():
     CreatePie(CreateList())
