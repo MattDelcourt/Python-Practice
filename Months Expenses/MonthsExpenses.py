@@ -13,7 +13,6 @@ pip install matplotlib
 '''
 
 import matplotlib.pyplot as plt
-from pyscript import display
 
 def CreateList():
     from pyodide.http import open_url
@@ -35,7 +34,7 @@ def CreatePie(expenses):
     ax.pie(expenses, labels=tags)
     ax.show()
 
-    display(fig)
+    fig
     
 def main():
     CreatePie(CreateList())
