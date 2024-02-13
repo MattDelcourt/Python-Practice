@@ -35,6 +35,8 @@ def CreatePie(expenses):
     plt.savefig('Expenses.png')
 
     plt.close()
+
+    print('<img src="pie_chart.png" alt="Pie Chart">')
     
 def main():
     CreatePie(CreateList())
