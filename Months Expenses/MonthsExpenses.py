@@ -28,19 +28,26 @@ def CreateList():
     return expenseList
 
 def CreatePie(expenses):
+    fig, ax = plt.subplots()
     tags = ['Rent', 'Gas', 'Food', 'Clothing', 'Car Payment', 'Miscellaneous']
-    colors = ['gold', 'yellowgreen', 'lightcoral', 'lightskyblue']
+    ax.title("Expenses")
+    ax.pie(expenses, labels=tags)
+    #ax.show()
     
-    plt.figure(figsize=(8, 6))
-    plt.axis('equal')
-    plt.title("Expenses")
-    plt.pie(expenses, labels=tags, colors=colors, autopct='%1.1f%%', shadow=True)
+    display(fig, target="output")
+    #tags = ['Rent', 'Gas', 'Food', 'Clothing', 'Car Payment', 'Miscellaneous']
+    #colors = ['gold', 'yellowgreen', 'lightcoral', 'lightskyblue']
     
-    plt.savefig('Expenses.png')
+    #plt.figure(figsize=(8, 6))
+    #plt.axis('equal')
+    #plt.title("Expenses")
+    #plt.pie(expenses, labels=tags, colors=colors, autopct='%1.1f%%', shadow=True)
     
-    print('<img src="Expenses.png" alt="Expenses Pie Chart">')
+    #plt.savefig('Expenses.png')
     
-    plt.close()
+    #print('<img src="Expenses.png" alt="Expenses Pie Chart">')
+    
+    #plt.close()
     
 def main():
     CreatePie(CreateList())
