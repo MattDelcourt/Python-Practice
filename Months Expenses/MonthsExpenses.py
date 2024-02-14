@@ -30,8 +30,8 @@ def CreateList():
 def CreatePie(expenses):
     fig, ax = plt.subplots()
     tags = ['Rent', 'Gas', 'Food', 'Clothing', 'Car Payment', 'Miscellaneous']
-    title = "Expenses"
-    ax.pie(expenses, labels=tags, title=title)
+    fig.title("Expenses")
+    ax.pie(expenses, labels=tags)
     #ax.show()
     
     display(fig, target="output")
