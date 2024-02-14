@@ -33,7 +33,4 @@ def FileToList():
 #Main
 def Main():
     FileToList()
-    leave = input("Press enter to close")
-
-
 Main()
