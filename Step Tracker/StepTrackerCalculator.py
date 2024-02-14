@@ -10,9 +10,11 @@ that the user has made 10,000 steps or more and display the number of days with
 10000 or more steps and the average monthly steps.
 '''
 
-#Get infor from file to list
+#Get info from file to list
 def FileToList():
-    stepList = open("Steps.txt", "r")
+    from pyodide.http import open_url
+    url = 'https://raw.githubusercontent.com/MattDelcourt/Python-Practice/master/Step%20Tracker/Steps.txt'
+    stepList = open_url(url)
     steps = 0
     total = 0
     average = 0.0
